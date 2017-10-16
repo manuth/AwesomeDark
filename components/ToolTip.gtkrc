@@ -22,8 +22,9 @@
  */
 style "ToolTip" = "Default"
 {
-
+    fg[NORMAL] = "Black"
+    bg[NORMAL] = "Beige"
+    bg[SELECTED] = "Black"
 }
-/*
+
 widget "gtk-tooltip*" style "ToolTip"
-*/
