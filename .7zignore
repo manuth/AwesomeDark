@@ -1,0 +1,7 @@
+.git/
+.vscode/
+bin/
+Documents/
+.7zignore
+.gitignore
+*.xcf

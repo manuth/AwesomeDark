@@ -1,0 +1,21 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "Build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "7z",
+            "args": [
+                "a",
+                "-xr@.7zignore",
+                "-up0",
+                "bin/${workspaceRootFolderName}.zip"
+            ]
+        }
+    ]
+}
