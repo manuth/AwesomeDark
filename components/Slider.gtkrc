@@ -20,10 +20,15 @@
  * See the License for the specific language governing premissions and
  * limitations under the License.
  */
-style "Slider" = "Default"
+style "Slider" = "UpDownBox"
 {
+    bg[SELECTED] = @LightAccent8
+
+    base[NORMAL] = @DarkAccent5
+    base[INSENSITIVE] = @LightAccent8
+
+    text[NORMAL] = @LightAccent6
+    text[INSENSITIVE] = @LightAccent5
 }
 
-/*
 widget_class "*<GimpSpinScale>" style "Slider"
-*/
