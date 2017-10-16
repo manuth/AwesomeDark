@@ -22,7 +22,8 @@
  */
 style "UpDownBox" = "Default"
 {
+    bg[INSENSITIVE] = @DarkAccent8
+    fg[INSENSITIVE] = @DarkAccent7
 }
-/*
+
 widget_class "*<GtkSpinButton>" style "UpDownBox"
-*/
