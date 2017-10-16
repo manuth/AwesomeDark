@@ -1,0 +1,112 @@
+/**
+ * AwesomeDark GIMP Theme
+ *
+ * Version 0.0.1
+ *
+ * Copyright © 2017, Manuel Thalmann
+ *
+ * Originally made by Benoit Touchette, 2015-2016
+ * Licensed under the GNU General Public License <http://www.gnu.org/licenses/>.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing premissions and
+ * limitations under the License.
+ *
+ * Special Thanks go to Benoit Touchette for creating the "Dark"-Theme already included in GIMP.
+ * Who knows - maybe my theme will make it into GIMP's repo, too... :')
+ * 
+ * Created using "BasicGimpTheme": https://github.com/manuth/BasicGimpTheme
+ */
+
+style "Default"
+{
+    /**
+     * Declaring Colors
+     */
+    color["None"] = "red"
+
+    /**
+     * Information:
+     *     ***Accent-variables represent a primary color.
+     *     All Accent-variables from 1 to 4 represent a brighter version of its primary color: The higher the number, the brighter the verison.
+     *     All Accent-variables from 5 to 8 represent a darker version of its primary color: The higher the number, the darker the verison.
+     */
+    
+    /* Declaring Light Color Accents */
+    color["LightAccent"] = "#DDDDDD"
+    color["LightAccent1"] = shade(1.03, @LightAccent)
+    color["LightAccent2"] = shade(1.07, @LightAccent)
+    color["LightAccent3"] = shade(1.10, @LightAccent)
+    color["LightAccent4"] = shade(1.15, @LightAccent)
+    color["LightAccent5"] = shade(0.94, @LightAccent)
+    color["LightAccent6"] = shade(0.79, @LightAccent)
+    color["LightAccent7"] = shade(0.67, @LightAccent)
+    color["LightAccent8"] = shade(0.46, @LightAccent)
+
+    /* Declaring Dark Color Accents */
+    color["DarkAccent"] = "#383838"
+    color["DarkAccent1"] = shade(1.05, @DarkAccent)
+    color["DarkAccent2"] = shade(1.33, @DarkAccent)
+    color["DarkAccent3"] = shade(1.52, @DarkAccent)
+    color["DarkAccent4"] = shade(1.73, @DarkAccent)
+    color["DarkAccent5"] = shade(0.75, @DarkAccent)
+    color["DarkAccent6"] = shade(0.69, @DarkAccent)
+    color["DarkAccent7"] = shade(0.62, @DarkAccent)
+    color["DarkAccent8"] = shade(0.48, @DarkAccent)
+
+    /* Assigning Colors */
+    bg[NORMAL] = @DarkAccent
+    bg[PRELIGHT] = @DarkAccent2
+    bg[ACTIVE] = @DarkAccent4
+    bg[SELECTED] = @DarkAccent3
+    bg[INSENSITIVE] = @LightAccent8
+
+    fg[NORMAL] = @LightAccent
+    fg[PRELIGHT] = @LightAccent2
+    fg[ACTIVE] = @LightAccent4
+    fg[SELECTED] = @LightAccent3
+    fg[INSENSITIVE] = @LightAccent8
+
+    base[NORMAL] = @DarkAccent3
+    base[PRELIGHT] = @DarkAccent4
+    base[ACTIVE] = @DarkAccent1
+    base[SELECTED] = @DarkAccent5
+    base[INSENSITIVE] = @LightAccent6
+
+    text[NORMAL] = @LightAccent
+    text[PRELIGHT] = @LightAccent2
+    text[ACTIVE] = @LightAccent4
+    text[SELECTED] = @LightAccent3
+    text[INSENSITIVE] = @LightAccent8
+    
+    GtkComboBox::appears-as-list = 0
+    GtkComboBoxEntry::appears-as-list = 0
+    GtkComboBoxText::appears-as-list = 0
+
+    engine "pixmap"
+    {
+    }
+}
+
+widget_class "*" style "Default"
+
+include "components/Button.gtkrc"
+include "components/CheckBox.gtkrc"
+include "components/RadioButton.gtkrc"
+include "components/ComboBox.gtkrc"
+include "components/TextBox.gtkrc"
+include "components/TaggedTextBox.gtkrc"
+include "components/UpDownBox.gtkrc"
+include "components/Slider.gtkrc"
+include "components/TabControl.gtkrc"
+include "components/TreeView.gtkrc"
+include "components/MenuBar.gtkrc"
+include "components/ToolTip.gtkrc"
