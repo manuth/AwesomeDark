@@ -64,29 +64,73 @@ style "Default"
     bg[PRELIGHT] = @DarkAccent2
     bg[ACTIVE] = @DarkAccent4
     bg[SELECTED] = @DarkAccent3
-    bg[INSENSITIVE] = @LightAccent8
+    bg[INSENSITIVE] = @LightAccent7
 
     fg[NORMAL] = @LightAccent
     fg[PRELIGHT] = @LightAccent2
     fg[ACTIVE] = @LightAccent4
     fg[SELECTED] = @LightAccent3
-    fg[INSENSITIVE] = @LightAccent8
+    fg[INSENSITIVE] = @LightAccent7
 
     base[NORMAL] = @DarkAccent3
     base[PRELIGHT] = @DarkAccent4
     base[ACTIVE] = @DarkAccent1
     base[SELECTED] = @DarkAccent5
-    base[INSENSITIVE] = @LightAccent6
+    base[INSENSITIVE] = @LightAccent7
 
     text[NORMAL] = @LightAccent
     text[PRELIGHT] = @LightAccent2
     text[ACTIVE] = @LightAccent4
     text[SELECTED] = @LightAccent3
-    text[INSENSITIVE] = @LightAccent8
+    text[INSENSITIVE] = @LightAccent7
     
+    /* General GTK Settings */
     GtkComboBox::appears-as-list = 0
     GtkComboBoxEntry::appears-as-list = 0
     GtkComboBoxText::appears-as-list = 0
+    GtkDialog::content-area-border = 0
+    GtkDialog::button-spacing = 6
+    GtkDialog::action-area-border = 12
+    GtkRange::trough-border = 0
+    GtkRange::slider-width = 15
+    GtkScale::slider-length = 14
+    GtkScale::slider-width  = 14
+    GtkScale::trough-border = 0
+    GtkScale::trough-side-details = 1
+    GtkVScale::slider_length = 14
+    GtkVScale::slider_width = 14
+    GtkScrollbar::trough-border = 0
+    GtkScrollbar::activate-slider = 1
+    GtkScrollbar::min-slider-length = 32
+    GtkScrolledWindow::scrollbar-spacing = 0
+    GtkScrolledWindow::scrollbars-within-bevel = 0
+    GtkTreeView::expander-size = 13
+    GtkExpander::expander-size = 13
+    GtkMenuItem::horizontal-padding = 4
+    GtkHScale::slider_length = 14
+    GtkHScale::slider_width = 14
+    GtkWidget::tooltip-alpha = 235
+    GtkWidget::new-tooltip-style = 1
+
+    GimpDockWindow::default-height = 240
+    GimpMenuDock::minimal-width = 200
+    GimpDockable::content-border = 1
+    GimpEditor::content-spacing = 1
+    GimpEditor::button-spacing = 1
+    GimpDataEditor::minimal-height = 64
+
+    /* Disabling Shadows */
+    GtkStatusbar::shadow_type = GTK_SHADOW_NONE
+    GtkSpinButton::shadow_type = GTK_SHADOW_NONE
+    GtkMenuBar::shadow-type = GTK_SHADOW_NONE
+    GtkToolbar::shadow-type = GTK_SHADOW_NONE
+    GtkList::shadow_type = GTK_SHADOW_NONE
+    GtkCList::shadow_type = GTK_SHADOW_NONE
+    GtkComboBox::shadow_type = GTK_SHADOW_NONE
+    GtkComboBoxEntry::shadow_type = GTK_SHADOW_NONE
+    GtkComboBoxText::shadow_type = GTK_SHADOW_NONE
+    GtkVScale::shadow_type = GTK_SHADOW_NONE
+    GtkHScale::shadow_type = GTK_SHADOW_NONE
 
     engine "pixmap"
     {
@@ -94,7 +138,9 @@ style "Default"
 }
 
 widget_class "*" style "Default"
+class "GtkWidget" style "Default"
 
+include "components/General.gtkrc"
 include "components/Button.gtkrc"
 include "components/CheckBox.gtkrc"
 include "components/RadioButton.gtkrc"
