@@ -22,8 +22,7 @@
  */
 style "TextBox" = "Default"
 {
-
+    text[INSENSITIVE] = @DarkAccent4
 }
-/*
+
 widget_class "*<GtkEntry>" style "TextBox"
-*/
