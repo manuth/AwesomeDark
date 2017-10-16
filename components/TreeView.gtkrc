@@ -44,7 +44,34 @@ style "TreeViewHeadings" = "Default"
             function = BOX
             state = NORMAL
             file = "ui/TreeViewHeaderNormal.png"
-            border = { 5, 5, 5, 5 }
+            border = { 4, 4, 4, 4 }
+        }
+
+        image
+        {
+            function = BOX
+            state = PRELIGHT
+            file = "ui/TreeViewHeaderPrelight.png"
+            border = { 4, 4, 4, 4 }
+            stretch = TRUE
+        }
+
+        image
+        {
+            function = BOX
+            state = ACTIVE
+            file = "ui/TreeViewHeaderActive.png"
+            border = { 4, 4, 4, 4 }
+            stretch = TRUE
+        }
+
+        image
+        {
+            function = BOX
+            state = INSENSITIVE
+            file = "ui/TreeViewHeaderInsensitive.png"
+            border = { 4, 4, 4, 4 }
+            stretch = TRUE
         }
     }
 }
