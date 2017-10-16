@@ -22,14 +22,19 @@
  */
 style "MenuBar" = "Default"
 {
-
 }
 
 style "MenuItem" = "Default"
 {
-
 }
+
+style "MenuItemText" = "Default"
+{
+    fg[INSENSITIVE] = @DarkAccent
+}
+
 /*
 widget_class "*<GtkMenuBar>" style "MenuBar"
 widget_class "*<GtkMenuItem>" style "MenuItem"
 */
+widget_class "*<GtkMenuItem>*<GtkLabel>" style "MenuItemText"
