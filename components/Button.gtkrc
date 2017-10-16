@@ -22,6 +22,9 @@
  */
 style "Button" = "Default"
 {
+    xthickness = 3
+    ythickness = 3
+
     bg[ACTIVE] = @DarkAccent5
 
     fg[NORMAL] = @DarkAccent3
@@ -29,6 +32,45 @@ style "Button" = "Default"
     fg[ACTIVE] = @DarkAccent3
     fg[SELECTED] = @DarkAccent3
     fg[INSENSITIVE] = @DarkAccent3
+
+    engine "pixmap"
+    {
+        image
+        {
+            function = BOX
+            state = NORMAL
+            file = "ui/ButtonNormal.png"
+            border = { 8, 8, 8, 8 }
+            stretch = TRUE
+        }
+
+        image
+        {
+            function = BOX
+            state = PRELIGHT
+            file = "ui/ButtonPrelight.png"
+            border = { 8, 8, 8, 8 }
+            stretch = TRUE
+        }
+
+        image
+        {
+            function = BOX
+            state = ACTIVE
+            file = "ui/ButtonActive.png"
+            border = { 8, 8, 8, 8 }
+            stretch = TRUE
+        }
+
+        image
+        {
+            function = BOX
+            state = INSENSITIVE
+            file = "ui/ButtonInsensitive.png"
+            border = { 8, 8, 8, 8 }
+            stretch = TRUE
+        }
+    }
 }
 
 style "ButtonText" = "Default"
@@ -36,5 +78,6 @@ style "ButtonText" = "Default"
     fg[ACTIVE] = @LightAccent6
 }
 
+class "GtkButton" style "Button"
 widget_class "*<GtkButton>" style "Button"
 widget_class "*<GtkButton>*<GtkLabel>" style "ButtonText"
