@@ -43,7 +43,7 @@ style "TreeViewHeadings" = "Default"
         {
             function = BOX
             state = NORMAL
-            file = "ui/TabControlHeaderNormal.png"
+            file = "ui/TreeViewHeaderNormal.png"
             border = { 5, 5, 5, 5 }
         }
     }
