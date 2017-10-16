@@ -19,6 +19,92 @@
  */
 style "TabControl" = "Default"
 {
+    engine "pixmap"
+    {
+        image
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            file = "ui/TabControlExtensionTop.png"
+            border = { 4, 4, 4, 4 }
+            stretch = TRUE
+            gap_side = BOTTOM
+        }
+
+        image
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            file = "ui/TabControlExtensionRight.png"
+            border = { 4, 4, 4, 4 }
+            stretch = TRUE
+            gap_side = LEFT
+        }
+        
+        image
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            file = "ui/TabControlExtensionBottom.png"
+            border = { 4, 4, 4, 4 }
+            stretch = TRUE
+            gap_side = TOP
+        }
+        
+        image
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            file = "ui/TabControlExtensionLeft.png"
+            border = { 4, 4, 4, 4 }
+            stretch = TRUE
+            gap_side = RIGHT
+        }
+
+        image
+        {
+            function = BOX_GAP
+            file = "ui/TabControl.png"
+            border = { 1, 1, 1, 1 }
+            stretch = TRUE
+            gap_file = "ui/TabControlHorizontalGap.png"
+            gap_border = { 1, 1, 0, 0 }
+            gap_side = TOP
+        }
+
+        image
+        {
+            function = BOX_GAP
+            file = "ui/TabControl.png"
+            border = { 1, 1, 1, 1 }
+            stretch = TRUE
+            gap_file = "ui/TabControlVerticalGap.png"
+            gap_border = { 0, 0, 1, 1 }
+            gap_side = RIGHT
+        }
+
+        image
+        {
+            function = BOX_GAP
+            file = "ui/TabControl.png"
+            border = { 1, 1, 1, 1 }
+            stretch = TRUE
+            gap_file = "ui/TabControlHorizontalGap.png"
+            gap_border = { 1, 1, 0, 0 }
+            gap_side = BOTTOM
+        }
+
+        image
+        {
+            function = BOX_GAP
+            file = "ui/TabControl.png"
+            border = { 1, 1, 1, 1 }
+            stretch = TRUE
+            gap_file = "ui/TabControlVerticalGap.png"
+            gap_border = { 0, 0, 1, 1 }
+            gap_side = LEFT
+        }
+    }
 }
 
 style "TabControlHeading" = "Default"
@@ -41,3 +127,4 @@ widget_class "*<GimpDockable>" style "TabPage"
 widget_class "*<GimpDockbook>.<GtkEventBox>.<GtkHBox>.<GtkLabel>" style "TabControlHeading"
 widget_class "*<GimpDockable>.<GtkBox>.<GtkLabel>" style "TabPageHeading"
 */
+class "GtkNotebook" style "TabControl"
