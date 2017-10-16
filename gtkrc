@@ -22,7 +22,6 @@
  * 
  * Created using "BasicGimpTheme": https://github.com/manuth/BasicGimpTheme
  */
-
 style "Default"
 {
     /**
@@ -153,3 +152,4 @@ include "components/TabControl.gtkrc"
 include "components/TreeView.gtkrc"
 include "components/MenuBar.gtkrc"
 include "components/ToolTip.gtkrc"
+include "components/ProgressBar.gtkrc"
