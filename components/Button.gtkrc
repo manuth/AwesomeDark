@@ -37,7 +37,7 @@ style "Button" = "Default"
             function = BOX
             state = NORMAL
             file = "ui/ButtonNormal.png"
-            border = { 4, 4, 4, 4 }
+            border = { 5, 5, 5, 5 }
             stretch = TRUE
         }
 
@@ -46,7 +46,7 @@ style "Button" = "Default"
             function = BOX
             state = PRELIGHT
             file = "ui/ButtonPrelight.png"
-            border = { 4, 4, 4, 4 }
+            border = { 5, 5, 5, 5 }
             stretch = TRUE
         }
 
@@ -55,7 +55,7 @@ style "Button" = "Default"
             function = BOX
             state = ACTIVE
             file = "ui/ButtonActive.png"
-            border = { 4, 4, 4, 4 }
+            border = { 5, 5, 5, 5 }
             stretch = TRUE
         }
 
@@ -64,7 +64,7 @@ style "Button" = "Default"
             function = BOX
             state = INSENSITIVE
             file = "ui/ButtonInsensitive.png"
-            border = { 4, 4, 4, 4 }
+            border = { 5, 5, 5, 5 }
             stretch = TRUE
         }
     }
