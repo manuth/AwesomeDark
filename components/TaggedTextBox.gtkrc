@@ -21,6 +21,7 @@ style "TaggedTextBox" = "Default"
 {
 
 }
+
 /*
-widget_class "*<GimpComboTagEntry>" style "TaggedTextBox"
-*/
+ * widget_class "*<GimpComboTagEntry>" style "TaggedTextBox"
+ */

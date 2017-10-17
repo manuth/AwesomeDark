@@ -109,22 +109,21 @@ style "TabControl" = "Default"
 
 style "TabControlHeading" = "Default"
 {
-
 }
 
 style "TabPage" = "Default"
 {
-
 }
 
 style "TabPageHeading" = "Default"
 {
-
 }
+
 /*
-widget_class "*<GimpDockbook>" style "TabControl"
-widget_class "*<GimpDockable>" style "TabPage"
-widget_class "*<GimpDockbook>.<GtkEventBox>.<GtkHBox>.<GtkLabel>" style "TabControlHeading"
-widget_class "*<GimpDockable>.<GtkBox>.<GtkLabel>" style "TabPageHeading"
-*/
+ * widget_class "*<GimpDockbook>" style "TabControl"
+ * widget_class "*<GimpDockable>" style "TabPage"
+ * widget_class "*<GimpDockbook>.<GtkEventBox>.<GtkHBox>.<GtkLabel>" style "TabControlHeading"
+ * widget_class "*<GimpDockable>.<GtkBox>.<GtkLabel>" style "TabPageHeading"
+ */
+
 class "GtkNotebook" style "TabControl"

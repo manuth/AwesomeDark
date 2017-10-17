@@ -19,15 +19,13 @@
  */
 style "RadioButton" = "Default"
 {
-
 }
 
 style "RadioButtonText" = "Default"
 {
-
 }
 
 /*
-widget_class "*GtkRadioButton" style "RadioButton"
-widget_class "*GtkRadioButton.<GtkLabel>" style "RadioButtonText"
-*/
+ * widget_class "*GtkRadioButton" style "RadioButton"
+ * widget_class "*GtkRadioButton.<GtkLabel>" style "RadioButtonText"
+ */
