@@ -19,26 +19,30 @@
  */
 style "ComboBox" = "Default"
 {
+}
 
+style "ComboBoxButton" = "Button"
+{
+    GtkButton::focus-line-width = 1
 }
 
 style "ComboBoxText" = "Default"
 {
-
 }
 
 style "ComboBoxArrow" = "Default"
 {
-
 }
 
 style "ComboBoxMenu" = "Default"
 {
-
 }
 
-/* widget_class "*<GtkComboBox>.<GtkToggleButton>" style "ComboBox"
-widget_class "*<GtkComboBox>.<GtkCellLayout>" style "ComboBoxText"
-widget_class "*<GtkComboBox>.<GtkButton>.<GtkHBox>.<GtkArrow>" style "ComboBoxArrow"
-widget "*gtk-combobox-popup-menu*" style "ComboBoxMenu"
-*/
+widget_class "*<GtkComboBox>.<GtkToggleButton>" style "ComboBoxButton"
+
+/** 
+ * widget_class "*<GtkComboBox>" style "ComboBox"
+ * widget_class "*<GtkComboBox>.<GtkCellLayout>" style "ComboBoxText"
+ * widget_class "*<GtkComboBox>.<GtkButton>.<GtkHBox>.<GtkArrow>" style "ComboBoxArrow"
+ * widget "*gtk-combobox-popup-menu*" style "ComboBoxMenu"
+ */
