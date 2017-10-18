@@ -44,8 +44,19 @@ style "Button" = "Default"
         image
         {
             function = BOX
+            shadow = OUT
             state = PRELIGHT
             file = "ui/ButtonPrelight.png"
+            border = { 5, 5, 5, 5 }
+            stretch = TRUE
+        }
+
+        image
+        {
+            function = BOX
+            shadow = IN
+            state = PRELIGHT
+            file = "ui/ButtonActivePrelight.png"
             border = { 5, 5, 5, 5 }
             stretch = TRUE
         }
